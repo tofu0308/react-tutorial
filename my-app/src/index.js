@@ -131,9 +131,13 @@ if(document.getElementById('root')){
   ReactDOM.render(<Game />,document.getElementById('root'));
 }
 
+const name = '豆腐'
+const element = <h1>Hello, {name}</h1>;
+
+
 if(document.getElementById('helloWorld')){
   ReactDOM.render(
-    <h1>hello,world</h1>,
+    element,
     document.getElementById('helloWorld')
   );
 }

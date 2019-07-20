@@ -131,8 +131,19 @@ if(document.getElementById('root')){
   ReactDOM.render(<Game />,document.getElementById('root'));
 }
 
-const name = '豆腐'
-const element = <h1>Hello, {name}</h1>;
+
+const user = {
+  f_name: '豆',
+  l_name: '腐'
+};
+
+const formatName = (user) => {
+  return  `${user.f_name} ${user.l_name}`;
+}
+
+
+const element = (<h1>Hello, {formatName(user)}</h1>);
+
 
 
 if(document.getElementById('helloWorld')){
